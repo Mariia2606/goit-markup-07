@@ -441,15 +441,60 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-Vector-2"></use>
           </svg>
         </button>
+        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+          <div class="modal-form-field">
+            <label for="user-name" class="modal-input-text">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+              placeholder
+            />
+          </div>
+          <div class="modal-form-field">
+            <label for="user-tel" class="modal-input-text">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal-input"
+              placeholder
+            />
+          </div>
+          <div class="modal-form-field">
+            <label for="user-mail" class="modal-input-text">Почта</label>
+            <input
+              type="email"
+              name="user-mail"
+              id="user-mail"
+              class="modal-input"
+              for="user-mail"
+              placeholder
+            />
+          </div>
+          <div class="modal-form-field">
+            <label for="user-comment" class="modal-input-text">Комментарий</label>
+            
+          <textarea user="user-comment-text" id="user-comment" class="modal-textarea"
+             placeholder="Введите текст"></textarea>
+             <fieldset>
+               
+                 <input type="radio" name="condition" id="condition" value="Соглашаюсь с рассылкой и принимаю Условия договора"/>
+              <label for="condition">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+             </fieldset>
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script>-->
   </body>
 </html>
