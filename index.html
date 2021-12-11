@@ -439,7 +439,7 @@
             </li>
           </ul>
         </div>
-        <section class="subscribe">
+        
        <div class="footer-subscribe"> <h2 class="footer-tittle">Подпишитесь на рассылку</h2>
  
    <form action="#" class="online-form">
@@ -458,10 +458,10 @@
   <use href="./images/icons.svg#icon-icon-send"></use>
 </svg></button>
 
-</form></div></section>
+</form>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
@@ -514,15 +514,23 @@
             
           <textarea user="user-comment-text" id="user-comment" class="modal-textarea"
              placeholder="Введите текст"></textarea>
-             <fieldset class="fielset-none">
-               
-                 <input type="radio" class="condition" name="condition" id="condition" value="Соглашаюсь с рассылкой и принимаю Условия договора"/>
-              <label for="condition" class="modal-input-text">Соглашаюсь с рассылкой и принимаю <a href="" class="contract">Условия договора</a></label>
-             </fieldset>
+          <div class="modal-form-field">
+                      <input type="checkbox" 
+                      id="modal-check"
+                       name="policy"
+                        class="modal-check visually-hidden"/>
+                   <label fot="modal-check" 
+                   class="modal-condition-text"><span><svg class="icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-Vector-1-1"></use>
+                  </svg></span>Соглашаюсь с рассылкой и принимаю  
+                   <a href="" class="contract"> Условия договора</a></label>
+                    </div>
+        
+
           <button type="submit" class="button-submit" class="">Отправить</button>
         </form>
       </div>
     </div>
-    <!-- <script src=".goit-markup-hw-06/js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
