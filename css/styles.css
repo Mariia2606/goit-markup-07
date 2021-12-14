@@ -714,6 +714,7 @@ background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .project-link {
  
@@ -722,6 +723,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .project-link:hover,
 .project-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .project-card-text {
   font-family: Roboto;
@@ -743,9 +745,12 @@ transform: translateY(101%);
   position: relative;
   overflow: hidden;
 }
-.project-item:hover .project-card-text {
-transform: translateY(0);
-}
+  .project-item:hover .project-card-text, 
+  .project-item:focus .project-card-text
+  {
+  transform: translateY(0);
+  } 
+
 .backdrop {
   width: 100vw;
   height: 100vh;
@@ -840,7 +845,7 @@ line-height: 0.87;
 font-weight: bold;
 text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 30px;
+margin-bottom: 12px;
 color: #212121;
 }
 .modal-input {
@@ -855,7 +860,7 @@ padding-right: 15px;*/
 background-color: transparent;
 padding-left: 37px;
 outline: 0;
-
+margin-bottom: 10px;
 }
 .modal-input:focus{
   border-color: var(--acent-color--);
@@ -881,6 +886,7 @@ margin-bottom: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-bottom: 30px;
 }
 
 .icon-check {
@@ -901,7 +907,6 @@ justify-content: center;
 .modal-condition-text span {
 width: 16px;
 height: 15px;
-
 border: 2 px solid;
 border-color: #000000;
 margin-right: 8.38px;
@@ -994,12 +999,14 @@ border-radius: 2px;
 
 
 
+
  .modal-input::placeholder {
   font-size: 12px;
 line-height: 0.86;
 color: rgba(117, 117, 117, 0.5);
 }
 .modal-textarea {
+  display: block;
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1008,10 +1015,15 @@ border-radius: 4px;
 padding: 12px 16px;
 resize: none;
 transition: border 250ms;
+margin-bottom: 20px;
 }
 .modal-textarea:focus {
   border: 1px solid var(--acent-color--);
 }
+.modal-condition-text span:hover,
+  .modal-check:focus + .modal-condition-text span {
+    border-color:var(--acent-color--);
+  }
 .modal-textarea::placeholder {
 font-size: 12px;
 line-height: 0.86;
@@ -1019,11 +1031,9 @@ color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-field {
   
-  margin-bottom: 10px;
 }
-.modal-form-field:last-child {
-    margin-bottom: 0;
-}
+.modal-form {margin-bottom: 60px;}
+
 .modal-iconname-wrap {
   position: relative;}
 .modal-name-icon {
@@ -1053,7 +1063,7 @@ font-weight: bold;
 font-size: 16px;
 line-height: 0.53;
 letter-spacing: 0.06em;
-margin-top: 30px;
+
 border-width: none;
     border-style: none;
     border-color: transparent;
@@ -1072,7 +1082,11 @@ color: var(--second-title-color--);
 display: flex;
 justify-content: center;
 align-items: center;
+border-width: none;
+    border-style: none;
+    border-color: transparent;
 }
+
 .subscribe-btn-icon {
   margin-left: 10px;
   fill: var(--acent-color--);
@@ -1088,6 +1102,7 @@ background-color: transparent;
 margin-right: 12px;
 padding: 16px 15px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+color: var(--second-title-color--);
 }
 .online-input::placeholder {
 
@@ -1111,6 +1126,4 @@ filter: var(--second-title-color--);
 }
 .online-form {
 
-  display: flex;
-}
-
+  display: flex;}
