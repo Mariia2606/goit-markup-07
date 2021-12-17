@@ -1,0 +1,111 @@
+.footerlogo {
+  font-family: Raleway;
+
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--second-title-color--);
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+.weblogo {
+  color: var(--acent-color--);
+}
+.footer-conteiner {
+  background-color: var(--second-bg-color--);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.div-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color--);
+  margin-bottom: 9px;
+}
+
+.footer-conacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  display: flex;
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--second-title-color--);
+  }
+}
+.footer-item {
+  margin-bottom: 10px;
+}
+.footer-conacts:last-child {
+  margin-bottom: 0;
+}
+.footer-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color--);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-sicial-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--second-title-color--);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color--);
+    /*color: var(--second-title-color--);*/
+  }
+}
+.footer-sicial-icon {
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+}
+.footer-adress {
+  margin-right: 70px;
+}
+/*
+.comand-sicial-icon:hover,
+.comand-sicial-icon:focus {
+  fill: var(--second-title-color--);
+}
+*/
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
