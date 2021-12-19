@@ -1,3 +1,7 @@
+// .header {
+//   background-color: var(--second-title-color--);
+//   border-bottom: 1px solid #ececec;
+// }
 .logo {
   font-family: Raleway;
 
@@ -9,20 +13,14 @@
   padding-bottom: 24px;
   padding-top: 24px;
 }
-.header {
+.header-conteiner {
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
-}
-.header-conteiner {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: space-between;
 }
 .header-navigation {
   display: flex;
-  .header-link.current {
-    color: var(--acent-color--);
-  }
 }
 
 .header-conect {
@@ -45,12 +43,21 @@
   &:focus {
     color: var(--acent-color--);
   }
+  .current-acent::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--acent-color--);
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    bottom: -2px;
+  }
 }
 
 .header-item {
   margin-right: 50px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   &:last-child {
     margin-right: 0;
   }
@@ -96,14 +103,4 @@
   fill: currentColor;
   margin-right: 10px;
   align-content: flex-end;
-}
-.header-link.current-acent::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--acent-color--);
-  position: absolute;
-  border-radius: 2px;
-  left: 0;
-  bottom: -2px;
 }

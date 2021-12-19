@@ -70,8 +70,7 @@
 .footer-social-link {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -85,8 +84,7 @@
 }
 .footer-sicial-icon {
   fill: currentColor;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
 }
 
