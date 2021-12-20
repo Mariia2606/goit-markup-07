@@ -8,9 +8,9 @@
   transition: opacity 300ms, visibility 300ms;
   &.is-hidden {
     .modal {
-    transform: scale(1.5) rotate(270deg) translate(0);
+      transform: scale(1.5) rotate(270deg) translate(0);
+    }
   }
-}
 }
 
 .modal {
@@ -36,7 +36,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
- @extend %align-list;
+  @extend %align-list;
   justify-content: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,17 +106,17 @@ padding-right: 15px;*/
   background-color: transparent;
   padding-left: 37px;
   outline: 0;
- &:focus {
-  border-color: var(--acent-color--);
-}
-&:focus + .modal-name-icon {
-  fill: var(--acent-color--);
-}
-&::placeholder {
-  font-size: 12px;
-  line-height: 0.86;
-  color: rgba(117, 117, 117, 0.5);
-}
+  &:focus {
+    border-color: var(--acent-color--);
+  }
+  &:focus + .modal-name-icon {
+    fill: var(--acent-color--);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 0.86;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-name-icon {
@@ -133,20 +133,19 @@ padding-right: 15px;*/
   font-size: 14px;
   line-height: 0.58;
   color: var(--text-color--);
-@extend %align-list;
+  @extend %align-list;
   justify-content: center;
   margin-bottom: 30px;
-span {
-  &:hover {
-  border-color: var(--acent-color--);
+  span {
+    &:hover {
+      border-color: var(--acent-color--);
+    }
+  }
 }
-}
-}
-.modal-check 
-{
+.modal-check {
   &:focus + .modal-condition-text span {
-  border-color: var(--acent-color--);
-}
+    border-color: var(--acent-color--);
+  }
 }
 
 .icon-check {
@@ -202,26 +201,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-condition-text {
   span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000000;
-  margin-right: 8.38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  &:hover {
-  border-color: var(--acent-color--);
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    margin-right: 8.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      border-color: var(--acent-color--);
+    }
+  }
 }
-}
 
-
-
-.modal-check
-{
+.modal-check {
   &:checked + .modal-condition-text span {
-  background-color: var(--acent-color--);
-  border: none;}
+    background-color: var(--acent-color--);
+    border: none;
+  }
 }
 
 /*
@@ -242,7 +240,6 @@ border-radius: 2px;
   border: none;
   }*/
 
-
 .modal-textarea {
   display: block;
   width: 448px;
@@ -254,21 +251,19 @@ border-radius: 2px;
   resize: none;
   transition: border 250ms;
   margin-bottom: 20px;
-&:focus {
-  border: 1px solid var(--acent-color--);
+  &:focus {
+    border: 1px solid var(--acent-color--);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 0.86;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-&::placeholder {
-  font-size: 12px;
-  line-height: 0.86;
-  color: rgba(117, 117, 117, 0.5);
-}
-}
-
 
 .modal-form-field {
   margin-bottom: 10px;
 }
-
 
 .modal-iconname-wrap {
   position: relative;
@@ -340,27 +335,23 @@ border-radius: 2px;
   padding: 16px 15px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--second-title-color--);
-&::placeholder {
-  font-size: 16px;
-  line-height: 0.8;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 0.8;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    color: var(--second-title-color--);
+    filter: var(--second-title-color--);
+  }
+  &:focus::placeholder {
+    color: var(--second-title-color--);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-&:focus {
-  color: var(--second-title-color--);
-  filter: var(--second-title-color--);
-}
-&:focus::placeholder 
-{
-  color: var(--second-title-color--);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
-
-
-
 
 .subscribe-btn-icon {
- @extend %align-list;
+  @extend %align-list;
 }
 .online-form {
   display: flex;
