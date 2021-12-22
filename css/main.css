@@ -170,6 +170,7 @@
 
 .featurs__list {
   display: flex;
+  margin-right: -30px;
 }
 
 .featurs__text {
@@ -186,11 +187,11 @@
   margin-right: 0;
 }
 
-.featurs__item:last-child {
-  margin-right: 0;
+.featurs__item {
+  margin-right: 30px;
 }
 
-.featurs-svg-item:last-child {
+.featurs__item:last-child {
   margin-right: 0;
 }
 
@@ -350,11 +351,6 @@
 .comand-social-list {
   display: flex;
   justify-content: center;
-}
-
-.client-container {
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 
 .client-list {
