@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -31,12 +31,7 @@
   margin-bottom: 50px;
 }
 
-.btn-conteiner {
-  margin-top: 30px;
-  display: inline-block;
-  justify-content: center;
-}
-.section-btn {
+.hero__button {
   font-family: roboto;
   font-weight: 700;
   font-size: 16px;
