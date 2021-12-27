@@ -2,25 +2,17 @@
 //   background-color: var(--second-title-color--);
 //   border-bottom: 1px solid #ececec;
 // }
-.header__logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--tittle-color--);
-  text-decoration: none;
-  margin-right: 95px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+.header {
+  background-color: var(--second-title-color--);
+  border-bottom: 1px solid #ececec;
 }
+
 .header__item {
   margin-right: 50px;
   display: flex;
   align-items: center;
 }
-.header__logo-weblogo {
-  color: var(--acent-color--);
-}
-.header-conteiner {
+. .header-conteiner {
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
   @extend %align-list;
@@ -35,6 +27,7 @@
 }
 .header__contact-list {
   display: flex;
+  align-items: center;
 }
 .header__link {
   font-weight: 500;

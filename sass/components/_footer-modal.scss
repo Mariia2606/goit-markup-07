@@ -2,21 +2,9 @@
   display: flex;
 }
 .footer__btn-subscribe {
-  width: 200px;
-  height: 50px;
-  background: var(--acent-color--);
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 0.53;
-  font-family: inherit;
-  color: var(--second-title-color--);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-width: none;
-  border-style: none;
-  border-color: transparent;
 }
 
 .subscribe-btn-icon {

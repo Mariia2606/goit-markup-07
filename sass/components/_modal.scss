@@ -282,25 +282,8 @@ border-radius: 2px;
   color: var(--acent-color--);
   margin-left: 3px;
 }
+
 .button-submit {
-  background: var(--acent-color--);
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 56px;
-  padding-left: 55px;
   display: block;
   margin: 0 auto;
-  font-family: inherit;
-  width: 200px;
-  height: 50px;
-  color: var(--second-title-color--);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 0.53;
-  letter-spacing: 0.06em;
-
-  border-width: none;
-  border-style: none;
-  border-color: transparent;
 }
