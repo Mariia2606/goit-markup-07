@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
 }
-. .header-conteiner {
+.header--conteiner {
   background-color: var(--second-title-color--);
   border-bottom: 1px solid #ececec;
   @extend %align-list;
